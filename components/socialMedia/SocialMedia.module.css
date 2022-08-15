@@ -1,0 +1,19 @@
+.socialMediaIcons{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-rows:max-content max-content max-content max-content;
+    width:max-content;
+    position:fixed;
+    /* bottom:7rem; */
+    top:0rem;
+    right:5rem;
+    height:100%;
+    align-content: center;
+}
+.socialMediaIcons a{
+    margin:0.5rem;
+}
+.socialMediaIcons a img{
+    height:30px;
+}

@@ -1,0 +1,35 @@
+.container{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:white;
+    background-color:rgba(0, 0, 0, 0.1);
+    overflow-y:scroll;
+    z-index:5;
+    padding-top:6rem;
+    padding-bottom:6rem;
+}
+.statusBar{
+    height:5px;
+    /* background-color: cyan; */
+    background-color: gold;
+}
+.container > div{
+    width:max-content;
+    border:1px solid rgb(210, 210, 210);
+    margin:auto;
+    background-color:white;
+}
+.closeButton{
+    text-align:right;
+}
+.closeButton span{
+    font-size:2rem;
+    padding-bottom:16px;
+    padding:0rem 0.85rem 0.35rem 0.85rem;
+}
+.closeButton span:hover{
+    cursor:pointer;
+}

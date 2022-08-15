@@ -1,0 +1,19 @@
+.filter{
+    /* border:1px solid rgb(210, 210, 210); */
+    border-radius:5px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    width:280px;
+    height:max-content;
+    margin-top:1.8rem;
+}
+.filter > span{
+    padding:0.5rem;
+    border:1px solid rgb(210, 210, 210);
+    border-radius:5px;
+    margin-right:0.5rem;
+    margin-top:0.5rem;
+}

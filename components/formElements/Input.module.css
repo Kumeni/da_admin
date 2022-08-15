@@ -1,0 +1,39 @@
+.container{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns:auto max-content;
+    grid-template-rows:auto;
+    position:relative;
+    background-color:transparent;
+    width:max-content;
+}
+.input, .inputP{
+    font-size:1rem;
+    border:none;
+    border:1px solid rgba(255, 217, 0, 0.5);
+    width:240px;
+}
+.input{
+    padding:0.7rem 0.5rem 0.7rem 0.5rem;
+}
+.inputP{
+    padding:0.7rem 39px 0.7rem 0.5rem;
+}
+.paswd{
+    padding-right:42px;
+}
+.input:focus, .inputP:focus{
+    outline:none;
+    border-color:gold;
+}
+.eye{
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    display:inline-block;
+    padding-top:10px;
+    padding-right:12px;
+    padding-left:12px;
+}

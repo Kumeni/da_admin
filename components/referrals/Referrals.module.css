@@ -1,0 +1,31 @@
+.container{
+    margin:0.5rem 0.5rem 0.5rem 0rem;
+    border-left:2px solid gold;
+    padding-left:0.5rem;
+    /* border:1px solid black; */
+}
+.container p{
+    font-size:1.1rem;
+}
+.remaining{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns: auto 36px;
+    grid-template-rows:auto;
+    align-content:center;
+    margin:0.3rem 0rem;
+}
+.remaining p{
+    padding:2px 0.2rem;
+    /* border:1px solid black; */
+    margin-right:0.2rem;
+    align-self:center;
+
+}
+.remaining a{
+    /* border:1px solid black; */
+    text-align:center;
+    padding:3px 5px 7px 5px;
+    border-radius:50%;
+}

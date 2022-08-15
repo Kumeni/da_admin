@@ -1,0 +1,13 @@
+.section{
+    /* border:1px solid black; */
+    width:100%;
+    height:100vh;
+    display: grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content:center;
+    /* background-color: forestgreen; */
+}

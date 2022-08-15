@@ -1,0 +1,110 @@
+.landing {
+    width:90%;
+    margin:1rem auto 0rem auto;
+    /* border:1px solid black; */
+    transition:0.5s width;
+    transition:0.5s height;
+    overflow-y: hidden;
+}
+@media (max-width:1200px) and (min-width:1024px){
+    .landing{
+        width:95%;
+    }
+}
+@media (max-width:1024px){
+    .landing{
+        width:100%;
+    }
+}
+@media (max-width:425px){
+    .landing{
+        margin:0rem;
+    }
+}
+
+.main{
+    position:relative;
+    overflow-y:hidden;
+}
+.ourServices{
+    text-align:center;
+    width:90%;
+    margin:3rem auto 3rem auto;
+}
+@media (max-width:768px){
+    .ourServices{
+        margin:1rem auto 2rem auto;
+        width:100%;
+        border:none;
+    }
+}
+@media (max-width:425px){
+    .ourServices{
+        margin:2.5rem auto;
+    }
+}
+
+.ourServices h1{
+    margin-bottom:2rem;
+}
+
+.whyUs{
+    margin:auto;
+}
+
+.whyUs h1{
+    text-align:center;
+    margin-bottom:2rem;
+}
+@media (min-width:800px){
+    .whyUs{
+        max-width:768px;
+    }
+}
+@media (max-width:800px){
+    .whyUs{
+        width:100%;
+    }
+}
+
+.introduction h2{
+    max-width:900px;
+    margin:4rem 1rem 3rem 1rem;
+    text-align:center;
+    font-size:2.3rem;
+}
+@media (max-width:768px){
+    .introduction h2{
+        text-align:left;
+    }
+}
+
+.introduction h2 strong{
+    font-weight:500;
+}
+
+.introduction p, .introduction ul{
+    text-align:left;
+    width:max-content;
+    margin:auto;
+    /* border:1px solid black; */
+}
+
+.introduction ul{
+    text-align:center;
+    max-width:100%;
+}
+
+.introduction ul{
+    /* list-style:none; */
+}
+
+.introduction > ul > a{
+    display:block;
+    margin:0.5rem auto;
+    color:blue;
+}
+
+.introduction > ul > a:hover{
+    text-decoration: underline;
+}

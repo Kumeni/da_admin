@@ -1,0 +1,27 @@
+.container{
+    position:absolute;
+    top:110%;
+    left:0;
+    right:0;
+    z-index:2;
+    border:1px solid rgb(210, 210, 210);
+    border-radius:5px;
+    background-color:white;
+    /* display:none; */
+}
+.container button{
+    background-color:transparent;
+    border:none;
+    font-size:1rem;
+    padding:0.6rem 1rem;
+    display:block;
+    width:100%;
+    text-align:left;
+}
+.container button:not(:first-of-type){
+    border-top:1px solid rgb(210, 210, 210);
+}
+.container button:hover{
+    cursor: pointer;
+    background-color:rgb(250, 250, 250);
+}

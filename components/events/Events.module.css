@@ -1,0 +1,13 @@
+.container{
+    /* border:1px solid black; */
+    width:1200px;
+}
+.container h2{
+    text-align:center;
+    margin-bottom:1rem;
+    color:#fc9010;
+    font-family:cursive;
+}
+.events{
+    overflow:hidden;
+}

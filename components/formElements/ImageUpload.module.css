@@ -1,0 +1,90 @@
+.container{
+    /* border:1px solid black; */
+}
+.container > label{
+    font-weight:600;
+    margin-bottom:1rem;
+    display:block;
+}
+.images{
+    overflow: auto;
+    /* white-space: nowrap; */
+    display:flex;
+    flex-wrap: nowrap;
+    flex-shrink: -1;
+    flex-direction: row;
+}
+.images > div:not(:last-of-type){
+    display:inline-block;
+    min-width:280px;
+    max-width:280px;
+    height:100%;
+    border:1px solid rgb(210, 210, 210);
+    align-self:center;
+    position:relative;
+    margin-right:1rem;
+}
+.images > div:last-of-type{
+    min-width:280px;
+    max-width:280px;
+    height:280px;
+    /* padding:1rem; */
+    background-color:rgb(250, 250, 250);
+    border:2px dotted rgb(180, 180, 180);
+    border-radius:5px;
+    align-self:center;
+    margin-right:1rem;
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto;
+    justify-content: center;
+    align-content: center;
+}
+.dropzone{
+    padding:2rem;
+    width:280px;
+    height:280px;
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-rows: auto auto;
+    align-content:center;
+    justify-content: center;
+}
+.dropzone:hover{
+    cursor:pointer;
+    background-color:rgb(230, 230, 230);
+}
+.dropzone p{
+    font-size:1.2rem;
+    text-align:center;
+    font-weight:600;
+    margin:auto;
+}
+
+.images > div:not(:last-of-type) > img{
+    width:100%;
+    height:100%;
+}
+.remove{
+    background-color:red;
+    font-size:1.5rem;
+    padding:0rem 0.6rem 0.3rem 0.6rem;
+    position:absolute;
+    right:0;
+    top:0;
+    color:white;
+}
+.remove:hover{
+    cursor:pointer;
+}
+.add{
+    font-size:1.5rem;
+    border:1px solid rgb(210, 210, 210);
+    padding:0rem 0.7rem 0.4rem 0.7rem;
+    border-radius:50%;
+    margin-bottom:0.5rem;
+    display:inline-block;
+}

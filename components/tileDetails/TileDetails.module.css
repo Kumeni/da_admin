@@ -1,0 +1,50 @@
+.container{
+    padding:0.5rem 0.5rem;
+}
+.container > div:first-of-type > div:first-of-type{
+    position:relative;
+}
+.container > div:first-of-type{
+    display:grid;
+    display:-ms-grid;
+    display:-moz-grid;
+    grid-template-columns: 87% 13%;
+    grid-template-rows:auto;
+}
+.container > div:first-of-type > div > p{
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+.more{
+    border:1px solid transparent;
+    border-radius:50%;
+    padding:3px 0rem;
+}
+
+.more:hover{
+    cursor:pointer;
+    border-color:rgb(210, 210, 210);
+}
+
+.more > div{
+    width:4px;
+    height:4px;
+    background-color:black;
+    border-radius:2px;
+    margin:0.2rem auto;
+}
+
+.content{
+    position:relative
+}
+
+.disabled{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    z-index:1;
+    background-color:rgba(255, 255, 255, 0.9);
+}

@@ -1,0 +1,19 @@
+.container h2{
+    text-align:center;
+    margin-bottom:1rem;
+    color:#fc9010;
+    font-family:cursive;
+    font-size:1.5rem;
+}
+.title{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    max-width:1200px;
+    margin:auto;
+}
+.title a{
+    font-size:1.2rem;
+    /* font-family:cursive; */
+    font-weight:600;
+}

@@ -1,0 +1,28 @@
+.container{
+    margin-left:0.5rem;
+    border:1px solid transparent;
+    display:flex;
+    display:-webkit-flex;
+    align-content:center;
+    width:max-content;
+    padding:0rem 0.5rem;
+}
+.container:hover{
+    border-color:rgb(210, 210, 210);
+    cursor:pointer;
+}
+.container label{
+    padding-bottom:2px;
+}
+.container label:hover{
+    cursor:pointer;
+}
+.container input{
+    margin-left:0.5rem;
+}
+.container:hover{
+    cursor:pointer;
+}
+.container input:hover{
+    cursor:pointer;
+}
