@@ -83,7 +83,7 @@ function EditRoom(props) {
             setWater(props.activeRoom.attributes.water)
             setElectricity(props.activeRoom.attributes.electricity);
             setWifi(props.activeRoom.attributes.wifi);
-            setAdditionalDescription(props.activeRoom.attributes.fromTenant);
+            setAdditionalDescription(props.activeRoom.attributes.fromLandlord);
         }
     }, [props.activeRoom, props.roomTypes, props.requiredGenders])
     const handleRoomNo = event => {
@@ -187,7 +187,7 @@ function EditRoom(props) {
 
     const handleSubmit = event => {
         event.preventDefault();
-        //setStatus("LOADING");
+        setStatus("LOADING");
         
         // form validation
         // show error message below the submit button
@@ -274,7 +274,7 @@ function EditRoom(props) {
         // Organize the data for making post or put request
         data = {
             buildingId:router.query.id,
-            fromTenant:additionalDescription,
+            fromLandlord:additionalDescription,
             requiredGenderId:requiredGenderId,
             roomNo:roomNo,
             roomTypeId:roomTypeId,

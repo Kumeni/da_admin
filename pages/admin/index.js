@@ -19,6 +19,7 @@ import EditHostel from '../../components/editHostel/EditHostel';
 import AddReferrals from '../../components/addReferrals/AddReferrals';
 import axios from 'axios';
 import {put} from '../../utilities/api'
+import Contacts from '../../components/contacts/Contacts';
 
 function Admin(props) {
 
@@ -27,6 +28,7 @@ function Admin(props) {
     const [title, setTitle] = useState("Add Hostel");
     const [popup, setPopup] = useState(false);
     const [activeHostel, setActiveHostel] = useState();
+    const [contacts, setContacts] = useState();
 
     
     const addReferrals = (index) => {
@@ -104,11 +106,38 @@ function Admin(props) {
             console.log(err);
         })
     }
+    
+    const getContacts = () => {
+        const qs = require('qs');
+        const query = qs.stringify({
+            filters: {
+                userId: props.authorization.user.id
+            },
+            }, {
+            encodeValuesOnly: true, // prettify URL
+        });
+
+        axios({
+            method: 'get',
+            url: props.server+'/api/contacts?'+query,
+            headers:{
+                "Authorization": "Bearer "+props.authorization.jwt,
+            },
+        })
+        .then( res => {
+            console.log(res.data.data);
+            setContacts(res.data.data.slice()[0]);
+        })
+        .then( err => {
+            console.log(err);
+        })
+    }
 
 
     useEffect(()=>{
         if(popup === false){
             getHostels();
+            getContacts();
         }
     }, [popup])
 
@@ -164,7 +193,12 @@ function Admin(props) {
             </Layout1>
             
             <SocialMedia />
-
+            <Contacts 
+                server = {props.server}
+                authorization = {props.authorization}
+                contacts = {contacts}
+                getContacts = {() => getContacts()}
+            />
             <L1PopUp 
                 popup={popup}
                 handleClick = { data => handleClick(data)}

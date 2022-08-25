@@ -1,0 +1,62 @@
+.form > p{
+    font-size:1.2rem;
+    text-align:center;
+    margin:1rem auto 1rem auto;
+}
+
+.form > div{
+    display:grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows:repeat(6, auto);
+    justify-content:center;
+    background-color:white;
+    box-shadow:1px 1px 4px rgb(180, 180, 180);
+    padding:2.5rem 1rem;
+    max-width:700px;
+    margin:0rem auto 0rem auto;
+    column-gap:10px;
+    row-gap:10px;
+}
+.initials{
+    justify-self:right;
+}
+.form > div > label{
+    align-self:center;
+    justify-self:right;
+    font-weight:600;
+}
+.form > div > span{
+    align-self:center;
+}
+.whatsapp{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self:center;
+    padding:0.5rem 1rem;
+}
+.submit{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    align-self:center;
+}
+.form > div > span:last-of-type{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align:center;
+}
+.close{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border:1px solid transparent;
+    font-size: 1.8rem;
+    width:max-content;
+    padding: 0rem 0.7rem 0.4rem 0.7rem;
+    border-radius: 50%;
+    justify-self:right;
+}
+.close:hover{
+    cursor: pointer;
+    border-color:rgb(210, 210, 210);
+}
